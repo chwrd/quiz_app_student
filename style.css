@@ -39,3 +39,81 @@
     /* Bonus 1. Select the correct div and add a background color + Select the incorrect div and add a background color */
     /* Bonus 2. Add container h1 styling and quiz h2 styling */
     /* Bonus 3. Add on .btn:hover effect */
+
+:root{
+    --body-bg-color: steelblue;
+    --container-bg-color: whitesmoke;
+}
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: var(--body-bg-color);
+    }
+
+    .container{
+        background-color: var(--container-bg-color);
+        width: 90%;
+        max-width: 600px;
+        margin: 100px auto 0;
+        padding: 50px;
+        border-radius: 20px;
+    }
+    
+    .btn{
+        background: whitesmoke;
+        color: #010101;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #010101;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #next-btn{
+        background: darkcyan;
+        color: whitesmoke;
+        margin: 20px 0;
+        padding: 10px;
+        border: 0;
+        border-radius: 4px;
+        width: 150px;
+        display: none;
+    }
+
+    h1{
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
+    }
+
+    h2{
+        margin: 20px 0;
+    }
+
+    .btn:hover{
+        background: #010101;
+        color: whitesmoke;
+    }
+
+    .btn:hover:not([disabled]){
+        background: #010101;
+        color: whitesmoke;
+    }
+
+    .btn:hover:disabled{
+        cursor: not-allowed;
+    }
+
+    .correct{
+        background: palegreen;
+    }
+
+    .incorrect{
+        background: salmon;
+    }
+
